@@ -1,0 +1,240 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+div {
+	display: block;
+}
+
+body {
+	color: #252526;
+	font-size: 18px;
+	font-family: 'Vollkorn', serif;
+	background: #f2f3f6;
+}
+
+h1 {
+	font-size: 64px;
+}
+
+h2 {
+	font-size: 32px;
+	padding-top: 30px;
+}
+
+p {
+	padding: 15px 0;
+	line-height: 1.3em;
+}
+
+#content ul {
+	padding: 15px 0;
+}
+
+#content ul li {
+	padding: 0 0 10px;
+	list-style: disc;
+	line-height: 1.3em;
+}
+
+#content img {
+	max-width: 100%;
+}
+
+a, a:visited {
+	color: #252526;
+}
+
+a:hover {
+	color: #5b8450;
+}
+
+#wrapper {
+}
+
+a.button {
+	background: #97be8c;
+	padding: 10px 25px 0px;
+	border-radius: 2px;
+	text-decoration: none;
+	color: #FFF;
+}
+
+a:hover.button {
+	background: #799870;
+}
+
+a.current {
+	color: #5b8450;	
+}
+
+.inner {
+	width: 80%;
+	max-width: 1600px;
+	margin: 0 auto;
+	min-width: 800px;
+	clear: both;
+}
+
+.inner:before, .inner:after {
+	display: table;
+	content: "";
+}
+
+.inner:after {
+	clear: both;
+}
+
+#hgraphHero {
+	text-align: center;
+	padding: 500px 0 25px;
+	background: url(../images/hgraph_large.png) top center no-repeat;
+}
+
+#hgraphHero img {
+	margin-bottom: 30px;
+}
+
+#header {
+	padding: 30px 0 40px;
+}
+
+#header h1 {
+	font-size: 26px;
+}
+
+#logo {
+	background: url(../images/logo_hgraph.png) no-repeat 0 14px;
+	padding: 12px 12px 12px 42px;
+	text-decoration: none;
+}
+
+#navigation {
+	float: right;
+	width: 80%;
+	margin-top: -24px;
+}
+	
+#navigation ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navigation ul li {
+	float: right;
+	padding-left: 3%;
+}
+
+#navigation li a, #navigation li a:visited {
+	display: block;
+	text-decoration: none;
+	padding: 5px 8px 2px;
+}
+
+#content {
+	padding-bottom: 75px;
+}
+
+#secondaryHero {
+	background: #97be8c;
+}
+
+#secondaryHero, #footer {
+	padding: 30px 0;
+}
+
+.secondaryHero {
+	float: left;
+	text-align: center;
+	width: 33%;
+}
+
+.secondaryHero a {
+	background: #b1d5a7;
+	border-radius: 2px;
+	padding: 3px 20px 0px;
+	text-decoration: none;
+	width: 200px;
+}
+
+.secondaryHero a:hover {
+	background: #789b71;
+	color: #dbf9d3;
+}
+
+.secondaryHero.hGraph {
+	left: -5%;
+}
+
+.secondaryHero.hGraph .wrapper {
+	background: url(../images/icon_hgraph.png) top center no-repeat;
+	margin-right: 6%;
+	padding-top: 80px;
+}
+
+.secondaryHero.policy {
+}
+
+.secondaryHero.policy .wrapper {
+	background: url(../images/icon_steal.png) top center no-repeat;
+	margin: 0 3%;
+	padding-top: 80px;
+}
+
+.secondaryHero.join {
+	right: -5%;
+}
+
+.secondaryHero.join .wrapper {
+	background: url(../images/icon_join.png) top center no-repeat;
+	margin-left: 6%;
+	padding-top: 80px;
+}
+
+#footer {
+	background: #97be8c;
+	display: block;
+	text-align: center;
+}
+
