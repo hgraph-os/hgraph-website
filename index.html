@@ -1,89 +1,199 @@
-<html>
-<head>
-	<title>hGraph - Your health in one picture.</title>
-	<meta name="robots" content="index,follow">
-	<meta name="Googlebot" content="All">
-	<meta name="revisit-after" content="7_days">
-	<meta name="site" content="hGraph - Your health in one picture.">
-	<meta name="author" content="Involution Studios">
-	<meta name="description" content="hGraph is a standardized visual representation of a patient's health status, designed to increase awareness of the individual's factors that can affect one's overall health.">
-	<meta name="keywords" content="hgraph,health graph,healthcare visualization,patient-centric health,health score,EHR,electronic health record,hscore,healthcare software,healthcare application,involution studios">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>hGraph: Open source javascript library for visualizing health data</title>
 
-	<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/global.css" type="text/css" media="screen">
-</head>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/product/">
 
-<body>
+    <!-- Bootstrap core CSS -->
+<link href="bootstrap.min.css" rel="stylesheet">
 
-<div id="wrapper">
-	<div id="header">
-		<div class="inner">
-			<h1><a href="/" id="logo">hGraph</a></h1>
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
 
-			<div id="navigation">
-				<ul>
-					<li><a href="mailto:hgraph@goinvo.com?subject=Hey, I want to help with hGraph!" class="button">Participate</a></li>
-					<li><a href="mailto:hgraph@goinvo.com?subject=hGraph">Contact</a></li>
-					<li><a href="http://www.github.com/goinvo/hGraph">Code</a></li>
-					<li><a href="screenshots.html">Screenshots</a></li>
-					<li><a href="about.html">About</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-	<div id="hgraphHero">
-		<h1>Your health in one picture.</h1>
-	</div>
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="site-header sticky-top py-1">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="py-2" href="#" aria-label="hGraph">
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 20.8243C17.0564 20.8243 20.7969 17.1231 20.7969 12.5C20.7969 7.87687 17.0564 4.1757 12.5 4.1757C7.94355 4.1757 4.20306 7.87687 4.20306 12.5C4.20306 17.1231 7.94355 20.8243 12.5 20.8243ZM12.5 25C19.4036 25 25 19.4036 25 12.5C25 5.59644 19.4036 0 12.5 0C5.59644 0 0 5.59644 0 12.5C0 19.4036 5.59644 25 12.5 25Z" fill="#9CC68A"/>
+</svg>
 
-	<div id="secondaryHero">
-		<div class="inner">
-			<div class="secondaryHero hgraph">
-				<div class="wrapper">
-				<h2>Discover</h2>
+    </a>
+    <a class="py-2 d-none d-md-inline-block" href="#">About</a>
+    <a class="py-2 d-none d-md-inline-block" href="#">Demo</a>
+    <a class="py-2 d-none d-md-inline-block" href="#">Code</a>
+    <a class="py-2 d-none d-md-inline-block" href="#">Contact</a>
+  </div>
+</nav>
 
-				<p>hGraph is a visual representation of a patient's health status, designed to increase awareness of the individual's factors that can affect one's overall health.</p>
-
-				<p><a href="about.html">Learn More</a></p>
-				</div>
-			</div>
-			<div class="secondaryHero policy">
-				<div class="wrapper">
-				<h2>Steal</h2>
-
-				<p>Use this technique. It's open for anyone on the planet to leverage in their electronic health record, desktop or mobile app, or data heavy software, licensed under Apache 2.</p>
-
-				<p><a href="http://www.github.com/goinvo/hGraph">Get the Code</a></p>
-				</div>
-			</div>
-			<div class="secondaryHero join">
-				<div class="wrapper">
-				<h2>Participate</h2>
-				<p>Get involved by giving clinical and patient-focused feedback, joining the community, submitting code, and evolving the service.</p>
-
-				<p><a href="mailto:hgraph@goinvo.com?subject=Hey, I want to help with hGraph!">Participate</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="footer">
-		<a href="http://www.goinvo.com">by Involution Studios</a> - <a href="http://www.github.com/goinvo/hGraph">Code</a> - <a href="mailto:hgraph@goinvo.com?subject=hGraph">Feedback</a>
-	</div>
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+  <div class="col-md-5 p-lg-5 mx-auto my-5">
+    <h1 class="display-4 font-weight-normal">Your health in one picture.</h1>
+    <p class="lead font-weight-normal">hGraph is an open source javascript library for visualizing health data.</p>
+    <a class="btn btn-outline-secondary" href="#">Let's build your hGraph!</a>
+  </div>
 </div>
 
-<script type="text/javascript">
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+  <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Patient Demo</h2>
+      <p class="lead">Provide your patients with a beautiful view of their health.</p>
+    </div>
+    <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+  </div>
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+      <h2 class="display-5">Clinician Demo</h2>
+      <p class="lead">Use hGraph for monitoring your patient population.</p>
+    </div>
+    <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+  </div>
+</div>
 
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-10273473-8']);
-	_gaq.push(['_trackPageview']);
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+      <h2 class="display-5">A measuring stick for health.</h2>
+    </div>
+      <div class="row">
+          <div class="col-3 col-md">
+            <strong>Too High</strong>
+            <p>If the value of a metric is above its healthy range then the metric will be outside the green circle.</p>
+          </div>
+          <div class="col-3 col-md">
+            <strong>Too Low</strong>
+            <p>If the value of a metric is below its healthy range then the metric will be inside the green circle.</p>
+          </div>
+          <div class="col-3 col-md">
+            <strong>Healthy</strong>
+            <p>If the value of a metric is within the healthy range then the metric will be on the green circle.</p>
+          </div>
+      </div>
+      <p class="lead">hGraph provides a default healthy range profile which you can customize to suit your needs.</p>
+  </div>
+</div>
 
-	(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+  <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-left text-white overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Why use hGraph?</h2>
+      <p class="lead">See your health status in seconds.<br>
+Glanceable interface for major health metrics.<br>
+Behavior change and metric tracking.<br>
+Compliance tool.<br>
+hScore for grading a patient's health (notional).</p>
+    </div>
+  </div>
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+    </div>
+  </div>
+</div>
 
-</script>
-</body>
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+    </div>
+  </div>
+  <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-left text-white overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Who uses hGraph?</h2>
+      <p class="lead">Any human viewing their health.<br>
+Caretakers, parents, and guardians.<br>
+Clinicians of all kinds and specialties.<br>
+Hospitals, insurers, and population health experts.<br>
+Academics and public health experts.</p>
+    </div>
+  </div>
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-left text-dark overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">FAQs</h2>
+      <p><strong>Is hGraph free to use?</strong><br>
+      Yes, hGraph is licensed under Apache 2.0.</p>
+
+      <p><strong>How do I install hGraph?</strong><br>
+      Instruction for setting up hGraph on your machine are here.</p>
+
+      <p><strong>Is hGraph free to use?</strong><br>
+      Yes, hGraph is licensed under Apache 2.0.</p>
+
+      <p><strong>Is hGraph free to use?</strong><br>
+      Yes, hGraph is licensed under Apache 2.0.</p>
+
+      <p><strong>Is hGraph free to use?</strong><br>
+      Yes, hGraph is licensed under Apache 2.0.</p>
+    </div>
+  </div>
+</div>
+
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 20.8243C17.0564 20.8243 20.7969 17.1231 20.7969 12.5C20.7969 7.87687 17.0564 4.1757 12.5 4.1757C7.94355 4.1757 4.20306 7.87687 4.20306 12.5C4.20306 17.1231 7.94355 20.8243 12.5 20.8243ZM12.5 25C19.4036 25 25 19.4036 25 12.5C25 5.59644 19.4036 0 12.5 0C5.59644 0 0 5.59644 0 12.5C0 19.4036 5.59644 25 12.5 25Z" fill="#9CC68A"/>
+      </svg>
+      <small class="d-block mb-3 text-muted">&copy; 2010-2020</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>hGraph by GoInvo</h5>
+      <p><a href="https://www.goinvo.com">GoInvo</a> is a digital design studio in Boston, crafting the future of healthcare through strategy, creativity, and vision.</p>
+
+      <p><a href="mailto:hgraph@goinvo.com">hgraph@goinvo.com</a></p>
+    </div>
+    <!-- <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Business</a></li>
+        <li><a class="text-muted" href="#">Education</a></li>
+        <li><a class="text-muted" href="#">Government</a></li>
+        <li><a class="text-muted" href="#">Gaming</a></li>
+      </ul>
+    </div> -->
+    <div class="col-6 col-md">
+      <h5>Links</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="https://github.com/goinvo/hGraph">Github</a></li>
+        <li><a class="text-muted" href="#">Privacy</a></li>
+        <li><a class="text-muted" href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script></body>
 </html>
