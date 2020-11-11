@@ -24,18 +24,23 @@
     <link href="css/product.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="site-header sticky-top py-1">
-      <div class="container d-flex flex-column flex-md-row justify-content-between">
-        <a class="py-2 mr-5" href="/" aria-label="hGraph">
-          <svg width="29" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle r="2.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 3.38281 2.90112)" fill="#EB5E43"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.499 20.8245C21.0555 20.8245 24.796 17.1234 24.796 12.5002C24.796 7.87712 21.0555 4.17595 16.499 4.17595C11.9426 4.17595 8.20208 7.87712 8.20208 12.5002C8.20208 17.1234 11.9426 20.8245 16.499 20.8245ZM16.499 25.0002C23.4026 25.0002 28.999 19.4038 28.999 12.5002C28.999 5.59668 23.4026 0.000244141 16.499 0.000244141C9.59546 0.000244141 3.99902 5.59668 3.99902 12.5002C3.99902 19.4038 9.59546 25.0002 16.499 25.0002Z" fill="#9CC68A"/>
-          </svg> hGraph
-        </a>
-        <a class="py-2 d-none d-md-inline-block" href="about/">About</a>
-        <a class="py-2 d-none d-md-inline-block" href="http://demo.hgraph.org/">Demo</a>
-        <a class="py-2 d-none d-md-inline-block" href="https://github.com/goinvo/hGraph" target="_blank">Code</a>
-        <a class="py-2 d-none d-md-inline-block" href="mailto:hgraph@goinvo.com">hgraph@goinvo.com</a>
+    <nav class="navbar navbar-expand-lg navbar-light site-header sticky-top">
+      <a class="navbar-brand" href="/">
+        <svg width="29" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle r="2.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 3.38281 2.90112)" fill="#EB5E43"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.499 20.8245C21.0555 20.8245 24.796 17.1234 24.796 12.5002C24.796 7.87712 21.0555 4.17595 16.499 4.17595C11.9426 4.17595 8.20208 7.87712 8.20208 12.5002C8.20208 17.1234 11.9426 20.8245 16.499 20.8245ZM16.499 25.0002C23.4026 25.0002 28.999 19.4038 28.999 12.5002C28.999 5.59668 23.4026 0.000244141 16.499 0.000244141C9.59546 0.000244141 3.99902 5.59668 3.99902 12.5002C3.99902 19.4038 9.59546 25.0002 16.499 25.0002Z" fill="#9CC68A"/>
+              </svg> hGraph
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="about/">About</a>
+          <a class="nav-item nav-link" href="http://demo.hgraph.org/" target="_blank">Demo</a>
+          <a class="nav-item nav-link" href="https://github.com/goinvo/hGraph" target="_blank">Code</a>
+          <a class="nav-item nav-link" href="mailto:hgraph@goinvo.com">hgraph@goinvo.com</a>
+        </div>
       </div>
     </nav>
 
@@ -43,27 +48,31 @@
       <div class="col-md-10 p-lg-5 mx-auto my-1">
         <h1 class="display-4 font-weight-normal">Your health in one picture.</h1>
         <p class="lead font-weight-normal">hGraph is an open source javascript library for visualizing health data.</p>
-        <a class="btn btn-outline-secondary" href="mailto:hgraph@goinvo.com">Let's build your hGraph!</a>
+        <a class="btn btn-outline-secondary" href="mailto:hgraph@goinvo.com?subject=I want hGraph for my organization">Let's build your hGraph!</a>
       </div>
-      <div>
-        <img src="images/hgraph-banner.png" alt="hGraph health visualization" style="max-height: 400px">
+      <div class="text-center">
+        <img src="images/hgraph-banner.png" alt="hGraph health visualization" style="max-height: 400px; max-width: 100%;">
       </div>
     </div>
 
     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
       <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
         <div class="my-3 py-3">
-          <h2><a href="http://demo.hgraph.org/">Patient Demo</a></h2>
+          <h2><a href="http://demo.hgraph.org/" target="_blank">Patient Demo</a></h2>
           <p class="lead">Give patients a beautiful view of their health.</p>
         </div>
-        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        <div class="mx-auto text-center" style="height: 300px;">
+          <img src="images/hgraph-mobile.png" alt="hGraph Patient Demo" style="max-width: 350px">
+        </div>
       </div>
       <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
         <div class="my-3 p-3">
           <h2>Clinician Demo</h2>
           <p class="lead">Use hGraph for monitoring your patient population.<br>(Dec 2020)</p>
         </div>
-        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        <div class="mx-auto text-center" style="height: 300px;">
+          <img src="images/hgraph-clinician-demo.png" alt="hGraph Clinician Demo" style="max-width: 100%">
+        </div>
       </div>
     </div>
 
@@ -134,12 +143,7 @@
     </div>
 
     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div class="bg-light md-5 text-center">
-        <div>
-          <img src="images/hgraph-ipad.jpg" style="max-width:100%; max-height:100%; object-fit: cover;" alt="hGraph for the iPad">
-        </div>
-      </div>
-      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-left text-black">
+      <div class="bg-light md-3 pt-3 px-3 pt-md-5 px-md-5 text-left text-black">
         <div class="my-3 py-3">
           <h2>Who uses hGraph?</h2>
           <p class="lead">Any human viewing their health.<br>
@@ -149,6 +153,11 @@
           Academics and public health experts.</p>
         </div>
       </div>
+      <div class="bg-light mr-3 md-5 text-center overflow-hidden">
+        <div>
+          <!-- <img src="images/hgraph-ipad.jpg" style="max-width:100%; max-height:100%; object-fit: cover;" alt="hGraph for the iPad"> -->
+        </div>
+      </div>
     </div>
 
     <div class="d-md-flex flex-md-equal w-100 my-md-3">
@@ -156,25 +165,25 @@
         <div class="my-3 py-3 container">
           <h2>FAQs</h2>
           <p><strong>Is hGraph free to use?</strong><br>
-          Yes, hGraph is licensed under <a href="https://github.com/goinvo/hGraph/blob/master/LICENSE">Apache 2.0</a>.</p>
+          Yes, hGraph is licensed under <a href="https://github.com/goinvo/hGraph/blob/master/LICENSE" target="_blank">Apache 2.0</a>.</p>
 
           <p><strong>Where can I find the source code?</strong><br>
-          <a href="https://github.com/goinvo/hGraph">https://github.com/goinvo/hGraph</a></p>
+          <a href="https://github.com/goinvo/hGraph" target="_blank">https://github.com/goinvo/hGraph</a></p>
 
           <p><strong>How do I install hGraph?</strong><br>
-          Instruction for setting up hGraph on your computer are on <a href="https://github.com/goinvo/hGraph">Github</a>.</p>
+          Instruction for setting up hGraph are on <a href="https://github.com/goinvo/hGraph" target="_blank">Github</a>.</p>
 
           <p><strong>What if I want to customize hGraph?</strong><br>
-          You're welcome to customize hGraph to suit your needs. You can customize on your own or <a href="contact/">hire us</a> to help.</p>
+          You're welcome to customize hGraph to suit your needs. You can customize on your own or <a href="mailto:hgraph@goinvo.com?subject=Hire the hGraph team">hire us</a> to help.</p>
 
           <p><strong>Does hGraph support FHIR?</strong><br>
-          Yes, hGraph supports FHIR STU3 with the <a href="https://github.com/symptomatic/hgraph-on-fhir">hgraph-on-fhir</a> repository.</p>
+          Yes, hGraph supports FHIR STU3 with the <a href="https://github.com/symptomatic/hgraph-on-fhir" target="_blank">hgraph-on-fhir</a> repository.</p>
 
-          <p><strong>How can I collaborate on this open source project?</strong><br>
-          You can see what we're looking for <a href="https://github.com/goinvo/hGraph">here</a> but feel free to <a href="contact/">contact us</a> with any ideas.</p>
+          <!-- <p><strong>How can I collaborate on this open source project?</strong><br>
+          You can see what we're looking for <a href="https://github.com/goinvo/hGraph">here</a> but feel free to <a href="mailto:hgraph@goinvo.com">contact us</a> with any ideas.</p> -->
 
           <p><strong>Who should I contact to get help with hGraph?</strong><br>
-          You can reach the team at <a href="mailto:hgraph@goinvo.com">hgraph@goinvo.com</a>.</p>
+          You can reach the team at <a href="mailto:hgraph@goinvo.com?subject=I can use help with hGraph">hgraph@goinvo.com</a>.</p>
         </div>
       </div>
     </div>
@@ -188,14 +197,14 @@
         </div> -->
         <div class="col-6 col-md">
           <h5>hGraph by GoInvo</h5>
-          <p><a href="https://www.goinvo.com">GoInvo</a> is a digital design studio in Boston, crafting the future of healthcare through strategy, creativity, and vision.</p>
+          <p><a href="https://www.goinvo.com" target="_blank">GoInvo</a> is a digital design studio in Boston, crafting the future of healthcare through strategy, creativity, and vision.</p>
 
           <p><a href="mailto:hgraph@goinvo.com">hgraph@goinvo.com</a></p>
         </div>
         <div class="col-6 col-md">
           <h5>Links</h5>
           <ul class="list-unstyled text-small">
-            <li><a href="https://github.com/goinvo/hGraph">Github</a></li>
+            <li><a href="https://github.com/goinvo/hGraph" target="_blank">Github</a></li>
             <!-- <li><a href="#">Privacy</a></li>
             <li><a href="#">Terms</a></li> -->
           </ul>
@@ -203,9 +212,10 @@
       </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
-    <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-3.5.1.min.js"><\/script>')</script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 
     <script type="text/javascript">
       var _gaq = _gaq || [];

@@ -1,107 +1,147 @@
-<html>
-<head>
-	<title>About hGraph</title>
-	<meta name="robots" content="index,follow">
-	<meta name="Googlebot" content="All">
-	<meta name="revisit-after" content="7_days">
-	<meta name="site" content="hGraph - Your health in one picture.">
-	<meta name="author" content="Involution Studios">
-	<meta name="description" content="hGraph is a standardized visual representation of a patient's health status, designed to increase awareness of the individual's factors that can affect one's overall health.">
-	<meta name="keywords" content="hgraph,health graph,healthcare visualization,patient-centric health,health score,EHR,electronic health record,hscore,healthcare software,healthcare application,involution studios">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="hGraph is an open source javascript library for visualizing health data.">
+    <meta name="author" content="GoInvo">
+    <meta name="keywords" content="hgraph,health graph,healthcare visualization,patient-centric health,health score,EHR,electronic health record,hscore,healthcare software,healthcare application,GoInvo studios">
+    <title>About hGraph – Your health in one picture.</title>
 
-	<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/global.css" type="text/css" media="screen">
-</head>
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
-<body>
+    <!-- Favicons -->
+    <!-- <link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#563d7c"> -->
 
-<div id="wrapper">
-	<div id="header">
-		<div class="inner">
-			<h1><a href="/" id="logo">hGraph</a></h1>
+    <!-- Custom styles for this template -->
+    <link href="../css/product.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light site-header sticky-top">
+      <a class="navbar-brand" href="../">
+        <svg width="29" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle r="2.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 3.38281 2.90112)" fill="#EB5E43"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.499 20.8245C21.0555 20.8245 24.796 17.1234 24.796 12.5002C24.796 7.87712 21.0555 4.17595 16.499 4.17595C11.9426 4.17595 8.20208 7.87712 8.20208 12.5002C8.20208 17.1234 11.9426 20.8245 16.499 20.8245ZM16.499 25.0002C23.4026 25.0002 28.999 19.4038 28.999 12.5002C28.999 5.59668 23.4026 0.000244141 16.499 0.000244141C9.59546 0.000244141 3.99902 5.59668 3.99902 12.5002C3.99902 19.4038 9.59546 25.0002 16.499 25.0002Z" fill="#9CC68A"/>
+              </svg> hGraph
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/about">About</a>
+          <a class="nav-item nav-link" href="http://demo.hgraph.org/" target="_blank">Demo</a>
+          <a class="nav-item nav-link" href="https://github.com/goinvo/hGraph" target="_blank">Code</a>
+          <a class="nav-item nav-link" href="mailto:hgraph@goinvo.com">hgraph@goinvo.com</a>
+        </div>
+      </div>
+    </nav>
 
-			<div id="navigation">
-				<ul>
-					<li><a href="mailto:hgraph@goinvo.com?subject=Hey, I want to help with hGraph!" class="button">Participate</a></li>
-					<li><a href="mailto:hgraph@goinvo.com?subject=hGraph">Contact</a></li>
-					<li><a href="http://www.github.com/goinvo/hGraph">Code</a></li>
-					<li><a href="screenshots.html">Screenshots</a></li>
-					<li><a href="about.html" class="current">About</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
+    <div class="d-md-flex flex-md-equal w-100 my-md-3">
+      <div class="bg-light pt-3 px-3 pt-md-5 px-md-5 text-left text-dark overflow-hidden">
+        <div class="my-3 py-3 container">
+          <h2>About hGraph</h2>
+          <h1>What is hGraph?</h1>
 
-	<div id="content">
-		<div class="inner">
-			<h1>What is hGraph?</h1>
+          <p>hGraph (Health Graph) is a standardized visual representation of a patient's health status, designed to increase awareness of the individual's factors that can affect one's overall health. hGraph displays a complete overview of an individual's health. This single picture method provides a person with a significant understanding of his or her total well being because it compiles multiple metrics into a unified graph that can be viewed at a glance.</p>
 
-			<p>hGraph (Health Graph) is a standardized visual representation of a patient's health status, designed to increase awareness of the individual's factors that can affect one's overall health. hGraph displays a complete overview of an individual's health. This single picture method provides a person with a significant understanding of his or her total well being because it compiles multiple metrics into a unified graph that can be viewed at a glance.</p>
+          <p>hGraph users can easily identify which metrics exist in a normal range versus those that may be too high or low. It effectively conveys important data at sizes both large and small, and enables users to recognize condition patterns. With hGraph, patients can track their own health and healthcare providers can learn to recognize representative visualizations for common diseases.</p>
 
-			<p>hGraph users can easily identify which metrics exist in a normal range versus those that may be too high or low. It effectively conveys important data at sizes both large and small, and enables users to recognize condition patterns. With hGraph, patients can track their own health and healthcare providers can learn to recognize representative visualizations for common diseases.</p>
+          <h2>How does hGraph work?</h2>
 
-			<h2>How does hGraph work?</h2>
+          <p>hGraph is an open source system for visualizing personal health metrics. It is currently the only tool that offers a systemic view of health. hGraph allows patients to own a holistic assessment of their health metrics, and gives clinicians an at-a-glance view of patient history, behavior and health status.</p>
 
-			<p>hGraph is an open source system for visualizing personal health metrics. It is currently the only tool that offers a systemic view of health. hGraph allows patients to own a holistic assessment of their health metrics, and gives clinicians an at-a-glance view of patient history, behavior and health status.</p>
+          <p>hGraph compares a person's health data against targeted health ranges based on factors like age and gender. Metrics that appear red are either lower or higher than the "good health" range. The hScore is an overall, aggregated score of health (1-100) that represents a person's "health status", or grade. In this deceptively simple fashion hGraph enables the compilation and display of a considerable amount of information within a limited space.</p>
 
-			<p>hGraph compares a person's health data against targeted health ranges based on factors like age and gender. Metrics that appear red are either lower or higher than the "good health" range. The hScore is an overall, aggregated score of health (1-100) that represents a person's "health status", or grade. In this deceptively simple fashion hGraph enables the compilation and display of a considerable amount of information within a limited space.</p>
+          <h2>Contributors</h2>
 
-			<h2>Contributors</h2>
+          <ul>
+            <li><a href="https://www.goinvo.com">GoInvo</a>, a digital design studio chosen to help the top tech companies in the world, including Apple, AstraZeneca, Microsoft, Oracle, Shutterfly, PayPal, McAfee, Yahoo, 3M and over 150 others.</li>
+            <li>iMedia Solutions, Modern Technologies since 1995, specializing in full software solutions with a focus in modern Web technologies.</li>
+          </ul>
 
-			<ul>
-				<li><a href="http://www.goinvo.com">Involution Studios</a>, an application design studio chosen to help the top tech companies in the world, including Apple, AstraZeneca, Microsoft, Oracle, Shutterfly, PayPal, McAfee, Yahoo, 3M and over 150 others.</li>
-				<li><a href="http://www.myimedia.com">iMedia Solutions</a>, Modern Technologies since 1995, specializing in full software solutions with a focus in modern Web technologies.</li>
-			</ul>
+          <h2>Installations</h2>
 
-			<h2>Installations</h2>
+          <ul>
+            <li><a href="http://www.crossoverhealth.com">Crossover Health</a>, a next-generation health care company that deploys corporate clinics to increase employee health outcomes and reduce employer costs. hGraph will be used by all Facebook and Apple employees by 2013.</li>
+            <li><a href="http://www.myombody.com">MyOmBody/Avo Labs</a>: Personal health coaching and monitoring.</li>
+          </ul>
 
-			<ul>
-				<li><a href="http://www.crossoverhealth.com">Crossover Health</a>, a next-generation health care company that deploys corporate clinics to increase employee health outcomes and reduce employer costs. hGraph will be used by all Facebook and Apple employees by 2013.</li>
-				<li><a href="http://www.myombody.com">MyOmBody/Avo Labs</a>: Personal health coaching and monitoring.</li>
-			</ul>
+          <h2>Publications and Presentations</h2>
 
-			<h2>Publications and Presentations</h2>
+          <ul>
+            <li><a href="../docs/hGraph_Whitepaper.pdf">hGraph: An Open System for Visualizing Personal Health Metrics</a>, Jonathan Follett, Juhan Sonin, April 2012</li>
+            <li><a href="http://vimeo.com/41157184">"hGraph Presentation" 12 Guru's Charity Health Summit</a>, Juhan Sonin, April 2012</li>
+            <li><a href="http://www.jopm.org/perspective/narratives/2011/04/26/hacking-health-designing-for-and-understanding-my-health">"Hacking Health" Journal of Personal Medicine</a>, Juhan Sonin, April 2011</li>
+            <li>"hGraph: Your Health in One Picture" MITRE, Birch, Inamdar, Sleeper, Sonin, August 2010</li>
+          </ul>
 
-			<ul>
-				<li><a href="docs/hGraph_Whitepaper.pdf">hGraph: An Open System for Visualizing Personal Health Metrics</a>, Jonathan Follett, Juhan Sonin, April 2012</li>
-				<li><a href="http://vimeo.com/41157184">"hGraph Presentation" 12 Guru's Charity Health Summit</a>, Juhan Sonin, April 2012</li>
-				<li><a href="http://www.jopm.org/perspective/narratives/2011/04/26/hacking-health-designing-for-and-understanding-my-health">"Hacking Health" Journal of Personal Medicine</a>, Juhan Sonin, April 2011</li>
-				<li>"hGraph: Your Health in One Picture" MITRE, Birch, Inamdar, Sleeper, Sonin, August 2010</li>
+          <h2>Recognition</h2>
 
-			<h2>Recognition</h2>
+          <ul>
+            <li><a href="https://yes.goinvo.com/articles/topic/health-design-challenge">.Gov Challenge: National Patient Record Redesign</a>, January 2013 - Showcased Entry</li>
+            <li><a href="https://yes.goinvo.com/articles/hgraph-designed-by-involution-places-second-at-the-new-england-health-datapalooza-advances-to-national-competition">New England Health Datapalooza</a>, October 2012 - Second Place</li>
+            <li><a href="http://strataconf.com/stratany2012/public/schedule/detail/25414">O'Reilly Strata Conference on Big Data</a>, October 2012 - Featured Presentation</li>
+            <li><a href="https://yes.goinvo.com/articles/involution-studios%E2%80%99-hgraph-selected-as-a-2012-mitx-interactive-awards-finalist">MITX Interactive Award</a>, October 2012 - Finalist</li>
+            <li>Stanford MedicineX Conference, September 2012 - White Paper</li>
+          </ul>
 
-			<ul>
-				<li><a href="http://www.goinvo.com/hgraph-selected-for-national-patient-record-redesign-showcase/">.Gov Challenge: National Patient Record Redesign</a>, January 2013 - Showcased Entry</li>
-				<li><a href="http://www.goinvo.com/hgraph-designed-by-involution-places-second-at-the-new-england-health-datapalooza-advances-to-national-competition/">New England Health Datapalooza</a>, October 2012 - Second Place</li>
-				<li><a href="http://strataconf.com/stratany2012/public/schedule/detail/25414">O'Reilly Strata Conference on Big Data</a>, October 2012 - Featured Presentation</li>
-				<li><a href="http://www.goinvo.com/involution-studios%E2%80%99-hgraph-selected-as-a-2012-mitx-interactive-awards-finalist/">MITX Interactive Award</a>, October 2012 - Finalist</li>
-				<li>Stanford MedicineX Conference, September 2012 - White Paper</li>
+          <h2>Press</h2>
+          <ul>
+            <li><a href="http://www.wired.com/design/2013/01/medical-record-redesign/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+wired%2Findex+%28Wired%3A+Top+Stories%29&pid=1916">Wired.com. How Restyling the Mundane Medical Record Could Improve Health Care</a>, January 2013</li>
+            <li><a href="http://www.healthit.gov/buzz-blog/health-innovation/winners-patient-health-record-graphic-design-contest-announced/">Health IT Buzz. Winners of Patient Health Record Graphic Design Contest Announced</a>, January 2013</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-			<h2>Press</h2>
-			<ul>
-				<li><a href="http://www.wired.com/design/2013/01/medical-record-redesign/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+wired%2Findex+%28Wired%3A+Top+Stories%29&pid=1916">Wired.com. How Restyling the Mundane Medical Record Could Improve Health Care</a>, January 2013</li>
-				<li><a href="http://www.healthit.gov/buzz-blog/health-innovation/winners-patient-health-record-graphic-design-contest-announced/">Health IT Buzz. Winners of Patient Health Record Graphic Design Contest Announced</a>, January 2013</li>
-			</ul>
-		</div>
-	</div>
+    <footer class="container py-5">
+      <div class="row">
+        <!-- <div class="col-1">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 20.8243C17.0564 20.8243 20.7969 17.1231 20.7969 12.5C20.7969 7.87687 17.0564 4.1757 12.5 4.1757C7.94355 4.1757 4.20306 7.87687 4.20306 12.5C4.20306 17.1231 7.94355 20.8243 12.5 20.8243ZM12.5 25C19.4036 25 25 19.4036 25 12.5C25 5.59644 19.4036 0 12.5 0C5.59644 0 0 5.59644 0 12.5C0 19.4036 5.59644 25 12.5 25Z" fill="#9CC68A"/>
+          </svg>
+        </div> -->
+        <div class="col-6 col-md">
+          <h5>hGraph by GoInvo</h5>
+          <p><a href="https://www.goinvo.com" target="_blank">GoInvo</a> is a digital design studio in Boston, crafting the future of healthcare through strategy, creativity, and vision.</p>
 
-	<div id="footer">
-		<a href="http://www.goinvo.com">by Involution Studios</a> - <a href="http://www.github.com/goinvo/hGraph">Code</a> - <a href="mailto:hgraph@goinvo.com?subject=hGraph">Feedback</a>
-	</div>
-</div>
+          <p><a href="mailto:hgraph@goinvo.com">hgraph@goinvo.com</a></p>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Links</h5>
+          <ul class="list-unstyled text-small">
+            <li><a href="https://github.com/goinvo/hGraph" target="_blank">Github</a></li>
+            <!-- <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </footer>
 
-<script type="text/javascript">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-10273473-8']);
-	_gaq.push(['_trackPageview']);
+    <script>window.jQuery || document.write('<script src="../js/jquery-3.5.1.min.js"><\/script>')</script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 
-	(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-10273473-8']);
+      _gaq.push(['_trackPageview']);
 
-</script>
-</body>
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+  </body>
 </html>
