@@ -20,6 +20,10 @@
   text-decoration: none;
 }
 
+a {
+  color: #538E4E;
+}
+
 /*
  * Dummy devices (replace them with your own or something else entirely!)
  */

@@ -2,198 +2,222 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v4.1.1">
-    <title>hGraph: Open source javascript library for visualizing health data</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/product/">
+    <meta name="description" content="hGraph is an open source javascript library for visualizing health data.">
+    <meta name="author" content="GoInvo">
+    <meta name="keywords" content="hgraph,health graph,healthcare visualization,patient-centric health,health score,EHR,electronic health record,hscore,healthcare software,healthcare application,GoInvo studios">
+    <title>hGraph – Your health in one picture.</title>
 
     <!-- Bootstrap core CSS -->
-<link href="bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Favicons -->
-<link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
-<meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
-<meta name="theme-color" content="#563d7c">
+    <!-- <link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#563d7c"> -->
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
     <!-- Custom styles for this template -->
-    <link href="product.css" rel="stylesheet">
+    <link href="css/product.css" rel="stylesheet">
   </head>
   <body>
     <nav class="site-header sticky-top py-1">
-  <div class="container d-flex flex-column flex-md-row justify-content-between">
-    <a class="py-2" href="index.html" aria-label="hGraph">
-      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 20.8243C17.0564 20.8243 20.7969 17.1231 20.7969 12.5C20.7969 7.87687 17.0564 4.1757 12.5 4.1757C7.94355 4.1757 4.20306 7.87687 4.20306 12.5C4.20306 17.1231 7.94355 20.8243 12.5 20.8243ZM12.5 25C19.4036 25 25 19.4036 25 12.5C25 5.59644 19.4036 0 12.5 0C5.59644 0 0 5.59644 0 12.5C0 19.4036 5.59644 25 12.5 25Z" fill="#9CC68A"/>
-</svg>
-
-    </a>
-    <a class="py-2 d-none d-md-inline-block" href="about.html">About</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Demo</a>
-    <a class="py-2 d-none d-md-inline-block" href="https://github.com/goinvo/hGraph">Code</a>
-    <a class="py-2 d-none d-md-inline-block" href="contact.html">Contact</a>
-  </div>
-</nav>
-
-<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
-  <div class="col-md-5 p-lg-5 mx-auto my-5">
-    <h1 class="display-4 font-weight-normal">Your health in one picture.</h1>
-    <p class="lead font-weight-normal">hGraph is an open source javascript library for visualizing health data.</p>
-    <a class="btn btn-outline-secondary" href="contact.html">Let's build your hGraph!</a>
-  </div>
-</div>
-
-<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-  <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-    <div class="my-3 py-3">
-      <h2 class="display-5">Patient Demo</h2>
-      <p class="lead">Provide your patients with a beautiful view of their health.</p>
-    </div>
-    <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-  </div>
-  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-    <div class="my-3 p-3">
-      <h2 class="display-5">Clinician Demo</h2>
-      <p class="lead">Use hGraph for monitoring your patient population.</p>
-    </div>
-    <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-  </div>
-</div>
-
-<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-    <div class="my-3 p-3">
-      <h2 class="display-5">A measuring stick for health.</h2>
-    </div>
-      <div class="row">
-          <div class="col-3 col-md">
-            <strong>Too High</strong>
-            <p>If the value of a metric is above its healthy range then the metric will be outside the green circle.</p>
-          </div>
-          <div class="col-3 col-md">
-            <strong>Too Low</strong>
-            <p>If the value of a metric is below its healthy range then the metric will be inside the green circle.</p>
-          </div>
-          <div class="col-3 col-md">
-            <strong>Healthy</strong>
-            <p>If the value of a metric is within the healthy range then the metric will be on the green circle.</p>
-          </div>
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2 mr-5" href="/" aria-label="hGraph">
+          <svg width="29" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle r="2.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 3.38281 2.90112)" fill="#EB5E43"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.499 20.8245C21.0555 20.8245 24.796 17.1234 24.796 12.5002C24.796 7.87712 21.0555 4.17595 16.499 4.17595C11.9426 4.17595 8.20208 7.87712 8.20208 12.5002C8.20208 17.1234 11.9426 20.8245 16.499 20.8245ZM16.499 25.0002C23.4026 25.0002 28.999 19.4038 28.999 12.5002C28.999 5.59668 23.4026 0.000244141 16.499 0.000244141C9.59546 0.000244141 3.99902 5.59668 3.99902 12.5002C3.99902 19.4038 9.59546 25.0002 16.499 25.0002Z" fill="#9CC68A"/>
+          </svg> hGraph
+        </a>
+        <a class="py-2 d-none d-md-inline-block" href="about/">About</a>
+        <a class="py-2 d-none d-md-inline-block" href="http://demo.hgraph.org/">Demo</a>
+        <a class="py-2 d-none d-md-inline-block" href="https://github.com/goinvo/hGraph" target="_blank">Code</a>
+        <a class="py-2 d-none d-md-inline-block" href="mailto:hgraph@goinvo.com">hgraph@goinvo.com</a>
       </div>
-      <p class="lead">hGraph provides a default healthy range profile which you can customize to suit your needs.</p>
-  </div>
-</div>
+    </nav>
 
-<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-  <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-left text-white overflow-hidden">
-    <div class="my-3 py-3">
-      <h2 class="display-5">Why use hGraph?</h2>
-      <p class="lead">See your health status in seconds.<br>
-Glanceable interface for major health metrics.<br>
-Behavior change and metric tracking.<br>
-Compliance tool.<br>
-hScore for grading a patient's health (notional).</p>
+    <div class="position-relative overflow-hidden pb-3 px-md-5 m-md-1 text-center">
+      <div class="col-md-10 p-lg-5 mx-auto my-1">
+        <h1 class="display-4 font-weight-normal">Your health in one picture.</h1>
+        <p class="lead font-weight-normal">hGraph is an open source javascript library for visualizing health data.</p>
+        <a class="btn btn-outline-secondary" href="mailto:hgraph@goinvo.com">Let's build your hGraph!</a>
+      </div>
+      <div>
+        <img src="images/hgraph-banner.png" alt="hGraph health visualization" style="max-height: 400px">
+      </div>
     </div>
-  </div>
-  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-    <div class="my-3 p-3">
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2><a href="http://demo.hgraph.org/">Patient Demo</a></h2>
+          <p class="lead">Give patients a beautiful view of their health.</p>
+        </div>
+        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      </div>
+      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2>Clinician Demo</h2>
+          <p class="lead">Use hGraph for monitoring your patient population.<br>(Dec 2020)</p>
+        </div>
+        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-    <div class="my-3 p-3">
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 md-3">
+      <div class="bg-light md-3 pt-3 px-3 pb-5 pt-md-5 px-md-5 text-center">
+        <div class="my-3 px-pb-3">
+          <h2>A measuring stick for health.</h2>
+        </div>
+        <div class="row">
+            <div class="col-4 col-md">
+              <p><svg viewBox="0 0 170 222" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 170px">
+              <rect />
+              <circle r="8" transform="matrix(-1 0 0 1 87 31)" fill="#EB5E43"/>
+              <path d="M82.3438 17H81.0156V11.625H75V17H73.6719V5.57812H75V10.4375H81.0156V5.57812H82.3438V17ZM94.6016 11.1797C94.6016 13.0651 94.0885 14.5078 93.0625 15.5078C92.0417 16.5026 90.5703 17 88.6484 17H85.4844V5.57812H88.9844C90.7604 5.57812 92.1406 6.07031 93.125 7.05469C94.1094 8.03906 94.6016 9.41406 94.6016 11.1797ZM93.1953 11.2266C93.1953 9.73698 92.8203 8.61458 92.0703 7.85938C91.3255 7.10417 90.2161 6.72656 88.7422 6.72656H86.8125V15.8516H88.4297C90.013 15.8516 91.2031 15.4635 92 14.6875C92.7969 13.9062 93.1953 12.7526 93.1953 11.2266ZM97.1562 17V5.57812H98.4844V15.7969H103.523V17H97.1562Z" fill="#262626"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M85 193.605C115.984 193.605 141.419 168.437 141.419 137C141.419 105.563 115.984 80.3948 85 80.3948C54.0162 80.3948 28.5808 105.563 28.5808 137C28.5808 168.437 54.0162 193.605 85 193.605ZM85 222C131.944 222 170 183.944 170 137C170 90.0558 131.944 52 85 52C38.0558 52 0 90.0558 0 137C0 183.944 38.0558 222 85 222Z" fill="#9CC68A"/>
+              </svg></p>
+
+              <p><strong>Too High</strong><br>
+              If the value of a metric is above its healthy range then the metric will be outside the green circle.</p>
+            </div>
+            <div class="col-4 col-md">
+              <p>
+                <svg viewBox="0 0 170 222" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 170px">
+                <rect />
+                <circle r="8" transform="matrix(-1 0 0 1 87 98)" fill="#EB5E43"/>
+                <path d="M82.3438 124H81.0156V118.625H75V124H73.6719V112.578H75V117.438H81.0156V112.578H82.3438V124ZM94.6016 118.18C94.6016 120.065 94.0885 121.508 93.0625 122.508C92.0417 123.503 90.5703 124 88.6484 124H85.4844V112.578H88.9844C90.7604 112.578 92.1406 113.07 93.125 114.055C94.1094 115.039 94.6016 116.414 94.6016 118.18ZM93.1953 118.227C93.1953 116.737 92.8203 115.615 92.0703 114.859C91.3255 114.104 90.2161 113.727 88.7422 113.727H86.8125V122.852H88.4297C90.013 122.852 91.2031 122.464 92 121.688C92.7969 120.906 93.1953 119.753 93.1953 118.227ZM97.1562 124V112.578H98.4844V122.797H103.523V124H97.1562Z" fill="#262626"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M85 193.605C115.984 193.605 141.419 168.437 141.419 137C141.419 105.563 115.984 80.3948 85 80.3948C54.0162 80.3948 28.5808 105.563 28.5808 137C28.5808 168.437 54.0162 193.605 85 193.605ZM85 222C131.944 222 170 183.944 170 137C170 90.0558 131.944 52 85 52C38.0558 52 0 90.0558 0 137C0 183.944 38.0558 222 85 222Z" fill="#9CC68A"/>
+                </svg>
+              </p>
+
+              <strong>Too Low</strong>
+              <p>If the value of a metric is below its healthy range then the metric will be inside the green circle.</p>
+            </div>
+            <div class="col-4 col-md">
+              <p>
+                <svg viewBox="0 0 170 222" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 170px">
+                <rect />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M85 193.605C115.984 193.605 141.419 168.437 141.419 137C141.419 105.563 115.984 80.3948 85 80.3948C54.0162 80.3948 28.5808 105.563 28.5808 137C28.5808 168.437 54.0162 193.605 85 193.605ZM85 222C131.944 222 170 183.944 170 137C170 90.0558 131.944 52 85 52C38.0558 52 0 90.0558 0 137C0 183.944 38.0558 222 85 222Z" fill="#9CC68A"/>
+                <circle r="8" transform="matrix(-1 0 0 1 87 68)" fill="#3B3B3B"/>
+                <path d="M82.3438 94H81.0156V88.625H75V94H73.6719V82.5781H75V87.4375H81.0156V82.5781H82.3438V94ZM94.6016 88.1797C94.6016 90.0651 94.0885 91.5078 93.0625 92.5078C92.0417 93.5026 90.5703 94 88.6484 94H85.4844V82.5781H88.9844C90.7604 82.5781 92.1406 83.0703 93.125 84.0547C94.1094 85.0391 94.6016 86.4141 94.6016 88.1797ZM93.1953 88.2266C93.1953 86.737 92.8203 85.6146 92.0703 84.8594C91.3255 84.1042 90.2161 83.7266 88.7422 83.7266H86.8125V92.8516H88.4297C90.013 92.8516 91.2031 92.4635 92 91.6875C92.7969 90.9062 93.1953 89.7526 93.1953 88.2266ZM97.1562 94V82.5781H98.4844V92.7969H103.523V94H97.1562Z" fill="#262626"/>
+                </svg>
+              </p>
+
+              <strong>Healthy</strong>
+              <p>If the value of a metric is within the healthy range then the metric will be on the green circle.</p>
+            </div>
+        </div>
+          <!-- <p class="lead">hGraph provides a default healthy range profile which you can customize to suit your needs.</p> -->
+      </div>
     </div>
-  </div>
-  <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-left text-white overflow-hidden">
-    <div class="my-3 py-3">
-      <h2 class="display-5">Who uses hGraph?</h2>
-      <p class="lead">Any human viewing their health.<br>
-Caretakers, parents, and guardians.<br>
-Clinicians of all kinds and specialties.<br>
-Hospitals, insurers, and population health experts.<br>
-Academics and public health experts.</p>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      <div class="bg-light md-3 pt-3 px-3 pt-md-5 px-md-5 text-left text-black">
+        <div class="my-3 py-3">
+          <h2>Why use hGraph?</h2>
+          <p class="lead">See your health status in seconds.<br>
+          Glanceable interface for major health metrics.<br>
+          Behavior change and metric tracking.<br>
+          Compliance tool.<br>
+          hScore for grading a patient's health (notional).</p>
+        </div>
+      </div>
+      <div class="bg-light mr-3 md-5 text-center overflow-hidden">
+        <div>
+          <img src="images/hgraph-ipad.jpg" style="max-width:100%; max-height:100%; object-fit: cover;" alt="hGraph for the iPad">
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="d-md-flex flex-md-equal w-100 my-md-3">
-  <div class="bg-light pt-3 px-3 pt-md-5 px-md-5 text-left text-dark overflow-hidden">
-    <div class="my-3 py-3">
-      <h2 class="display-5">FAQs</h2>
-      <p><strong>Is hGraph free to use?</strong><br>
-      Yes, hGraph is licensed under Apache 2.0.</p>
-
-      <p><strong>How do I install hGraph?</strong><br>
-      Instruction for setting up hGraph on your machine are here.</p>
-
-      <p><strong>Is hGraph free to use?</strong><br>
-      Yes, hGraph is licensed under Apache 2.0.</p>
-
-      <p><strong>Is hGraph free to use?</strong><br>
-      Yes, hGraph is licensed under Apache 2.0.</p>
-
-      <p><strong>Is hGraph free to use?</strong><br>
-      Yes, hGraph is licensed under Apache 2.0.</p>
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      <div class="bg-light md-5 text-center">
+        <div>
+          <img src="images/hgraph-ipad.jpg" style="max-width:100%; max-height:100%; object-fit: cover;" alt="hGraph for the iPad">
+        </div>
+      </div>
+      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-left text-black">
+        <div class="my-3 py-3">
+          <h2>Who uses hGraph?</h2>
+          <p class="lead">Any human viewing their health.<br>
+          Caretakers, parents, and guardians.<br>
+          Clinicians of all kinds and specialties.<br>
+          Hospitals, insurers, and population health experts.<br>
+          Academics and public health experts.</p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<footer class="container py-5">
-  <div class="row">
-    <div class="col-12 col-md">
-      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 20.8243C17.0564 20.8243 20.7969 17.1231 20.7969 12.5C20.7969 7.87687 17.0564 4.1757 12.5 4.1757C7.94355 4.1757 4.20306 7.87687 4.20306 12.5C4.20306 17.1231 7.94355 20.8243 12.5 20.8243ZM12.5 25C19.4036 25 25 19.4036 25 12.5C25 5.59644 19.4036 0 12.5 0C5.59644 0 0 5.59644 0 12.5C0 19.4036 5.59644 25 12.5 25Z" fill="#9CC68A"/>
-      </svg>
-      <small class="d-block mb-3 text-muted">&copy; 2010-2020</small>
-    </div>
-    <div class="col-6 col-md">
-      <h5>hGraph by GoInvo</h5>
-      <p><a href="https://www.goinvo.com">GoInvo</a> is a digital design studio in Boston, crafting the future of healthcare through strategy, creativity, and vision.</p>
+    <div class="d-md-flex flex-md-equal w-100 my-md-3">
+      <div class="bg-light pt-3 px-3 pt-md-5 px-md-5 text-left text-dark overflow-hidden">
+        <div class="my-3 py-3 container">
+          <h2>FAQs</h2>
+          <p><strong>Is hGraph free to use?</strong><br>
+          Yes, hGraph is licensed under <a href="https://github.com/goinvo/hGraph/blob/master/LICENSE">Apache 2.0</a>.</p>
 
-      <p><a href="mailto:hgraph@goinvo.com">hgraph@goinvo.com</a></p>
+          <p><strong>Where can I find the source code?</strong><br>
+          <a href="https://github.com/goinvo/hGraph">https://github.com/goinvo/hGraph</a></p>
+
+          <p><strong>How do I install hGraph?</strong><br>
+          Instruction for setting up hGraph on your computer are on <a href="https://github.com/goinvo/hGraph">Github</a>.</p>
+
+          <p><strong>What if I want to customize hGraph?</strong><br>
+          You're welcome to customize hGraph to suit your needs. You can customize on your own or <a href="contact/">hire us</a> to help.</p>
+
+          <p><strong>Does hGraph support FHIR?</strong><br>
+          Yes, hGraph supports FHIR STU3 with the <a href="https://github.com/symptomatic/hgraph-on-fhir">hgraph-on-fhir</a> repository.</p>
+
+          <p><strong>How can I collaborate on this open source project?</strong><br>
+          You can see what we're looking for <a href="https://github.com/goinvo/hGraph">here</a> but feel free to <a href="contact/">contact us</a> with any ideas.</p>
+
+          <p><strong>Who should I contact to get help with hGraph?</strong><br>
+          You can reach the team at <a href="mailto:hgraph@goinvo.com">hgraph@goinvo.com</a>.</p>
+        </div>
+      </div>
     </div>
-    <!-- <div class="col-6 col-md">
-      <h5>Resources</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Business</a></li>
-        <li><a class="text-muted" href="#">Education</a></li>
-        <li><a class="text-muted" href="#">Government</a></li>
-        <li><a class="text-muted" href="#">Gaming</a></li>
-      </ul>
-    </div> -->
-    <div class="col-6 col-md">
-      <h5>Links</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="https://github.com/goinvo/hGraph">Github</a></li>
-        <li><a class="text-muted" href="#">Privacy</a></li>
-        <li><a class="text-muted" href="#">Terms</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script></body>
+
+    <footer class="container py-5">
+      <div class="row">
+        <!-- <div class="col-1">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 20.8243C17.0564 20.8243 20.7969 17.1231 20.7969 12.5C20.7969 7.87687 17.0564 4.1757 12.5 4.1757C7.94355 4.1757 4.20306 7.87687 4.20306 12.5C4.20306 17.1231 7.94355 20.8243 12.5 20.8243ZM12.5 25C19.4036 25 25 19.4036 25 12.5C25 5.59644 19.4036 0 12.5 0C5.59644 0 0 5.59644 0 12.5C0 19.4036 5.59644 25 12.5 25Z" fill="#9CC68A"/>
+          </svg>
+        </div> -->
+        <div class="col-6 col-md">
+          <h5>hGraph by GoInvo</h5>
+          <p><a href="https://www.goinvo.com">GoInvo</a> is a digital design studio in Boston, crafting the future of healthcare through strategy, creativity, and vision.</p>
+
+          <p><a href="mailto:hgraph@goinvo.com">hgraph@goinvo.com</a></p>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Links</h5>
+          <ul class="list-unstyled text-small">
+            <li><a href="https://github.com/goinvo/hGraph">Github</a></li>
+            <!-- <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-10273473-8']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+  </body>
 </html>
