@@ -24,6 +24,10 @@ a {
   color: #538E4E;
 }
 
+h2 {
+  margin: 20px 0;
+}
+
 /*
  * Dummy devices (replace them with your own or something else entirely!)
  */
@@ -73,6 +77,20 @@ a {
     -ms-flex: 1;
     flex: 1;
   }
+}
+
+/* Tables */
+
+tr td:first-child, table th:first-child {
+  width: 70%;
+}
+
+table tr:nth-child(2) {
+  width: 30%;
+}
+
+th, td {
+  padding: 5px 0;
 }
 
 .overflow-hidden { overflow: hidden; }
