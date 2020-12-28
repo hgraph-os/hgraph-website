@@ -84,6 +84,10 @@ h3 {
   }
 }
 
+.mb-md-3, .my-md-3 {
+	margin-top: 0rem!important;
+}
+
 /* Tables */
 
 tr td:first-child, table th:first-child {
